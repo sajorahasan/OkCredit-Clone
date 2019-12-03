@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sajorahasan.okcredit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.sajorahasan.okcredit.SplashActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sajorahasan.okcredit.LanguageSelectionActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.sajorahasan.okcredit.WelcomeActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.auth.LoginActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.auth.VerifyOtpActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.HomeActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.navigationActivity.ProfileActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.navigationActivity.WebViewActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.customer.CustomerActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.customer.TransactionActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.customer.AddTransactionActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.navigationActivity.AccountActivity"
+            android:theme="@style/AppThemeDarkActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sajorahasan.okcredit.activity.navigationActivity.StatementActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sajorahasan.okcredit.utils.FetchAddressIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

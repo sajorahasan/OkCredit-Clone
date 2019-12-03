@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/ciContactPhoto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@id/flAddContactBtn"
+        android:layout_toEndOf="@id/ciContactPhoto"
+        android:fontFamily="@font/bold"
+        android:maxLines="1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/ciContactPhoto" />
+
+    <TextView
+        android:id="@+id/tvContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContactName"
+        android:layout_alignStart="@id/tvContactName"
+        android:layout_marginTop="6dp"
+        android:layout_toStartOf="@id/flAddContactBtn"
+        android:layout_toEndOf="@id/ciContactPhoto"
+        android:fontFamily="@font/regular"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/flAddContactBtn"
+        android:layout_width="75dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/add_btn_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bold"
+            android:text="@string/add"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/addContactProgress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ciContactPhoto"
+        android:layout_alignStart="@id/tvContactName"
+        android:layout_marginTop="12dp"
+        android:background="@color/shimmer_background" />
+</RelativeLayout>

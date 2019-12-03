@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#388e3c</color>
+    <color name="colorPrimaryLight">#a5d6a7</color>
+    <color name="colorAccent">#00c853</color>
+    <color name="background">#F6F6F6</color>
+    <color name="transparent">#66000000</color>
+
+    <color name="md_grey_50">#FAFAFA</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="black">#000000</color>
+
+    <color name="black_11">#111111</color>
+    <color name="black_22">#222222</color>
+    <color name="black_44">#444444</color>
+    <color name="black_66">#444444</color>
+    <color name="black_88">#888888</color>
+    <color name="text_default">#666</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#d0021b</color>
+    <color name="green_dark">#2b752e</color>
+    <color name="lightRed">#F68B48</color>
+    <color name="lightYellow">#F6BF48</color>
+    <color name="tx_credit">#ef5350</color>
+    <color name="shimmer_background">#dddddd</color>
+    <color name="divider">#f0f0f0</color>
+    <color name="tutorial_highlight_dot">#ee6002</color>
+    <color name="date_color">#c7f2dd</color>
+    <color name="date_container">#3f00e676</color>
+
+    <color name="grey100">#eaeaea</color>
+    <color name="grey150">#d8d8d8</color>
+    <color name="grey200">#d0d0d0</color>
+    <color name="grey400">#ababab</color>
+    <color name="grey50">#fafafa</color>
+    <color name="grey500">#9b9b9b</color>
+    <color name="grey600">#666666</color>
+    <color name="grey75">#ededed</color>
+    <color name="grey800">#888888</color>
+    <color name="grey_bg">#40d7d7d7</color>
+    <color name="grey_line">#22000000</color>
+    <color name="grey_transparent">#40d8d8d8</color>
+    <color name="primary">#4caf50</color>
+    <color name="primary_dark">#388e3c</color>
+    <color name="md_red_500">#f44336</color>
+    <color name="text_subtitle">#888</color>
+    <color name="text_subtitle_inverse">#eeeeee</color>
+    <color name="design_default_color_primary_dark">#303f9f</color>
+</resources>
